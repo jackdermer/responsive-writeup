@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Responsive Redesign Writeup</title>
+    <!-- <script src="support/jquery-3.5.1.min.js"></script>
+    <script src="support/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="support/bootstrap.min.css"> -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  <body>
+    <h1>Responsive Redesign</h1>
+    <h3 class="">Reimagining the Baja&#39s website</h3>
+
+    <div class="d-flex justify-content-center">
+        <a href="https://www.bajasrestaurants.com/locations" style="font-size: 20px" class="btn mybutton btn-outline-danger" role="button">Previous Baja's</a>
+<!--        <button href="www.google.com" style="font-size: 20px" type="button" class="btn mybutton btn-outline-danger">Previous Baja's</button>-->
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <a href="https://glacial-mesa-20944.herokuapp.com" style="font-size: 50px" class="btn mybutton btn-outline-danger" role="button">The Redesign</a>
+<!--        <button href="https://glacial-mesa-20944.herokuapp.com" role="button" style="font-size: 50px" type="button" class="btn mybutton btn-outline-danger">The Redesign</button>-->
+    </div>
+
+
+      <h2 style="margin-top: 20px">Usability Problems</h2>
+    <p>
+        Usability problems can cause the user experience to be inefficient, confusing, and unenjoyable. Accessibility problems
+        can make the site completely unusable for some users. Below, these problems are clearly identified.
+    </p>
+      <div style="margin-bottom: 5px" class="hor-line"></div>
+
+    <ul>
+        <li>The primary accessibility issue from the WebAIM WAVE is contrast. The buttons stand out as being
+        difficult to read.</li>
+        <li>The screen reader was correctly able to identify all the information. This is not suprising given
+        that there is not much information on the page and it is very spaced out</li>
+    </ul>
+
+      <div class="iframe-container">
+        <iframe class="responsive-iframe" src="https://xd.adobe.com/embed/bf8ce3e3-af38-4822-527c-baba8389dc39-c9bd/?fullscreen" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h2>Low-Fidelity Prototype</h2>
+    <p>
+        The purpose of the Low-Fidelity is to lay out a framework for a redesign in order to solve the problems listed above. Please see the annotations
+        of the Desktop prototype for general notes, and the other prototype for device specific notes. <i>These images are scrollable.</i>
+    </p>
+      <ul class="proto-nav nav nav-tabs" role="tablist">
+          <li class="nav-item waves-effect waves-light">
+              <a class="mynav nav-link active" id="lofi-desktop-tab" data-toggle="tab" href="#lofi-desktop" role="tab" aria-controls="lofi-desktop" aria-selected="true">Desktop</a>
+          </li>
+          <li class="nav-item waves-effect waves-light">
+              <a class="mynav nav-link" id="lofi-tablet-tab" data-toggle="tab" href="#lofi-tablet" role="tab" aria-controls="lofi-tablet" aria-selected="false">Tablet</a>
+          </li>
+          <li class="nav-item waves-effect waves-light">
+          <a class=" mynav nav-link" id="lofi-mobile-tab" data-toggle="tab" href="#lofi-mobile" role="tab" aria-controls="lofi-mobile" aria-selected="false">Mobile</a>
+          </li>
+      </ul>
+
+      <div class="tab-content">
+          <div class="tab-pane fade" id="lofi-mobile" role="tabpanel" aria-labelledby="lofi-mobile-tab">
+              <p></p>
+              <div class="iframe-container">
+                <iframe id="lo-fi-mobile" class="responsive-iframe" src="https://xd.adobe.com/embed/25b8d195-8f62-40ac-5f62-faa121754474-5389/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </div>
+            <div class="tab-pane fade" id="lofi-tablet" role="tabpanel" aria-labelledby="lofi-tablet-tab">
+                <p></p>
+                <div class="iframe-container">
+                    <iframe class="responsive-iframe" src="https://xd.adobe.com/embed/0ae2210f-788e-4cc4-5ff9-d09146aec379-7cd3/?fullscreen" frameborder="0" allowfullscreen></iframe>
+                </div>
+          </div>
+          <div class="tab-pane fade active show" id="lofi-desktop" role="tabpanel" aria-labelledby="lofi-desktop-tab">
+            <p></p>
+            <div class="iframe-container">
+                <iframe class="responsive-iframe" src="https://xd.adobe.com/embed/e712f860-1de1-4621-7363-961baa5f07ce-9123/?fullscreen" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+
+      <h2>High-Fidelity Prototype</h2>
+    <p>
+        The purpose of the High-Fidelity prototype is bring life to the site with color, animation, font, and images. For specifics on how this site is
+        constructed, please see the annotations on the Desktop prototype. For device specific notes, please see the Tablet and Mobile prototype. <i>These images are scrollable.</i>
+    </p>
+      <ul class="proto-nav nav nav-tabs" role="tablist">
+          <li class="nav-item waves-effect waves-light">
+              <a class="mynav nav-link active" id="hifi-desktop-tab" data-toggle="tab" href="#hifi-desktop" role="tab" aria-controls="hifi-desktop" aria-selected="true">Desktop</a>
+          </li>
+          <li class="nav-item waves-effect waves-light">
+              <a class="mynav nav-link" id="hifi-tablet-tab" data-toggle="tab" href="#hifi-tablet" role="tab" aria-controls="hifi-tablet" aria-selected="false">Tablet</a>
+          </li>
+          <li class="nav-item waves-effect waves-light">
+              <a class=" mynav nav-link" id="hifi-mobile-tab" data-toggle="tab" href="#hifi-mobile" role="tab" aria-controls="hifi-mobile" aria-selected="false">Mobile</a>
+          </li>
+      </ul>
+
+      <div class="tab-content">
+          <div class="tab-pane fade" id="hifi-mobile" role="tabpanel" aria-labelledby="hifi-mobile-tab">
+              <p></p>
+              <div class="iframe-container">
+                  <iframe id="hi-fi-mobile" class="responsive-iframe" src="https://xd.adobe.com/embed/2329e2c9-9793-44cc-7c57-7511963579af-5518/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="hifi-tablet" role="tabpanel" aria-labelledby="hifi-tablet-tab">
+              <p></p>
+              <div class="iframe-container">
+                  <iframe class="responsive-iframe" src="https://xd.adobe.com/embed/5c946686-8890-45c0-59f4-a9b9ffdbc0b1-2aa5/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="tab-pane fade active show" id="hifi-desktop" role="tabpanel" aria-labelledby="hifi-desktop-tab">
+              <p></p>
+              <div class="iframe-container">
+                  <iframe class="responsive-iframe" src="https://xd.adobe.com/embed/056d7df4-ec1e-408d-412a-e47ff86e01b8-735c/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+
+      <h2>Style Guide</h2>
+    <p>
+        The style guide is a clear and concise aggregation of all the design elements of the website.
+    </p>
+      <div class="hor-line"></div>
+      <img src="img/Style_Guide.png" class="shadow img-fluid my-image" alt="Responsive image">
+
+    <h2>The Final Product</h2>
+    <p>After all the prototyping and usability testing, please find the final site below. </p>
+    <div class="hor-line"></div>
+    <div class="d-flex justify-content-center">
+        <a href="https://glacial-mesa-20944.herokuapp.com" style="font-size: 30px" class="btn mybutton btn-outline-danger" role="button">The New Baja&#39s</a>
+    </div>
+
+    <h2>Accessibility</h2>
+    <p>It was important to test to make sure the redesigned site was accessible and responsive.</p>
+    <div class="hor-line"></div>
+    <ul>
+        <li><i>Varying Screen Sizes/Font:</i> The site properly updates when increasing the size. The flex boxes
+        allow for wrapping of text and good alignment</li>
+        <li><i>Google Translate:</i> The site is able to be translated to other languages and because of the scaling, is
+        able to keep the proper formatting</li>
+        <li><i>WebAIM WAVE:</i> All of the contrast flags present in the original site are no longer there</li>
+        <li><i>Screen Reader:</i> All information on the screen is readable by the screen reader</li>
+        <li><i>Different Devices:</i> Everything scales accordingly across multiple devices and keeps consistent formatting</li>
+    </ul>
+  </body>
+</html>
